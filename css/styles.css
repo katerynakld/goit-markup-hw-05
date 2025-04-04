@@ -631,12 +631,12 @@ img {
   position: absolute;
 }
 
-.modal-icon {
-  stroke: var(--dark);
-}
-
 .form-input:focus-within {
   border: 1px solid var(--primary-brand);
+}
+
+.input-box:focus-within .icon {
+  fill: var(--primary-brand);
 }
 
 .form-textarea {
