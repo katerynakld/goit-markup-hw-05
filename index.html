@@ -63,9 +63,7 @@
             Effective Solutions <br />
             for Your Business
           </h1>
-          <button type="button" class="hero-section-button">
-            Order Service
-          </button>
+          <button type="button" class="button">Order Service</button>
         </div>
       </section>
 
@@ -567,7 +565,95 @@
             </li>
           </ul>
         </div>
+        <div class="footer-item">
+          <p class="section-text medium">Subscribe</p>
+          <form class="subscribe-form" name="subscribe">
+            <input type="email" placeholder="Email" class="email-input" />
+            <button class="subscribe-button" type="submit">
+              Subscribe
+              <svg class="icon" width="24" height="20">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
+
+    <div class="modal-overlay is-open">
+      <div class="modal">
+        <div class="upper-button">
+          <button class="close-button">
+            <svg class="icon" width="8" height="8">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+        </div>
+        <p class="section-text medium">
+          Leave your contacts and we will call you back
+        </p>
+        <form class="contact-form" name="contact_form" autocomplete="off">
+          <label class="form-label"
+            >Name
+            <div class="input-box">
+              <svg class="icon" width="12" height="12">
+                <use
+                  href="./images/icons.svg#icon-person"
+                  class="modal-icon"
+                ></use>
+              </svg>
+              <input type="text" autofocus class="form-input" />
+            </div>
+          </label>
+          <label class="form-label"
+            >Phone
+            <div class="input-box">
+              <svg class="icon" width="12" height="12">
+                <use
+                  href="./images/icons.svg#icon-phone"
+                  class="modal-icon"
+                ></use>
+              </svg>
+              <input type="tel" class="form-input" />
+            </div>
+          </label>
+          <label class="form-label"
+            >Email
+            <div class="input-box">
+              <svg class="icon" width="12" height="12">
+                <use
+                  href="./images/icons.svg#icon-email"
+                  class="modal-icon"
+                ></use>
+              </svg>
+              <input type="email" class="form-input" />
+            </div>
+          </label>
+          <label class="form-label"
+            >Comment
+            <textarea
+              name="comment"
+              placeholder="Text input"
+              class="form-textarea"
+            ></textarea>
+          </label>
+          <label class="form-label">
+            <div class="terms">
+              <input
+                type="checkbox"
+                name="terms_and_conditions"
+                class="visually-hidden"
+              />
+              <svg class="icon checkbox-dummy" width="10" height="8">
+                <use href="./images/icons.svg#icon-check"></use>
+              </svg>
+              I accept the terms and conditions of the
+              <a href="" target="_blank">Privacy Policy</a>
+            </div>
+          </label>
+          <button class="button" type="submit">Send</button>
+        </form>
+      </div>
+    </div>
   </body>
 </html>
